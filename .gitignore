@@ -1,0 +1,17 @@
+**/target/
+**/generated/
+
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+eclipse/launch/loc/
+
+bundles/*/bin/
+bundles/*/bin_test/
+
+**/.awcache/
+**/node/
+**/node_modules/
+bundles/ash-ui-configinterface/typings/
+
+**/.*.md.html
