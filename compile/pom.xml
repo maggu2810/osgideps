@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.maggu2810.osgideps</groupId>
+    <artifactId>de.maggu2810.osgideps</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>de.maggu2810.osgideps.compile</artifactId>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <!-- BEG: Logging -->
+    <dependency>
+      <!-- license: MIT -->
+      <!-- license url: http://www.slf4j.org/license.html -->
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.21</version>
+      <scope>compile</scope>
+    </dependency>
+    <!-- END: Logging -->
+
+    <!-- BEG: OSGi API -->
+    <dependency>
+      <!--Apache License, Version 2.0 -->
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi.core</artifactId>
+      <version>6.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <!--Apache License, Version 2.0 -->
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi.cmpn</artifactId>
+      <version>7.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi.annotation</artifactId>
+      <version>7.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <!-- END: OSGi API -->
+
+    <!-- BEG: Gogo -->
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.apache.felix.gogo.runtime</artifactId>
+      <version>1.1.2</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- END: Gogo -->
+
+    <!-- BEG: Servlet and JAX-RS API -->
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.apache.felix.http.servlet-api</artifactId>
+      <version>1.1.2</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.tomcat</groupId>
+          <artifactId>tomcat-servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.aries.spec</groupId>
+      <artifactId>org.apache.aries.javax.jax.rs-api</artifactId>
+      <version>1.0.0</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.geronimo.specs</groupId>
+          <artifactId>geronimo-osgi-locator</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- END: Servlet and JAX-RS API -->
+
+    <!-- BEG: JAX-RS Whiteboard - OpenAPI -->
+    <dependency>
+      <groupId>de.maggu2810.jaxrswb.bundles</groupId>
+      <artifactId>jaxrswb-oapi-gen</artifactId>
+      <version>0.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-annotations</artifactId>
+      <version>2.1.1</version>
+    </dependency>
+    <!-- END: JAX-RS Whiteboard - OpenAPI -->
+
+    <dependency>
+      <groupId>org.apache.aries.jpa.javax.persistence</groupId>
+      <artifactId>javax.persistence_2.1</artifactId>
+      <version>2.7.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <!-- BEG: j2html -->
+    <dependency>
+      <groupId>com.j2html</groupId>
+      <artifactId>j2html</artifactId>
+      <version>1.4.0</version>
+    </dependency>
+    <!-- END: j2html -->
+
+    <!-- BEG: javax.annotation -->
+    <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>javax.annotation-api</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <!-- END: javax.annotation -->
+
+    <!-- BEG: javax.mail -->
+    <dependency>
+      <groupId>jakarta.mail</groupId>
+      <artifactId>jakarta.mail-api</artifactId>
+      <version>1.6.4</version>
+    </dependency>
+    <!-- END: javax.mail -->
+
+    <dependency>
+      <groupId>org.apache.servicemix.specs</groupId>
+      <artifactId>org.apache.servicemix.specs.json-api-1.1</artifactId>
+      <version>2.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jsonb_1.0_spec</artifactId>
+      <version>1.1</version>
+    </dependency>
+
+    <!-- BEG: Annotations -->
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-annotations</artifactId>
+      <version>3.1.12</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jdt</groupId>
+      <artifactId>org.eclipse.jdt.annotation</artifactId>
+      <version>2.2.400</version>
+    </dependency>
+    <!-- END: Annotations -->
+
+  </dependencies>
+
+</project>
