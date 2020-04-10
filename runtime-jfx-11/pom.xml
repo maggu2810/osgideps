@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.maggu2810.osgideps</groupId>
+    <artifactId>de.maggu2810.osgideps</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>de.maggu2810.osgideps.runtime-jfx-11</artifactId>
+  <packaging>pom</packaging>
+
+  <properties>
+    <jfx.version>11.0.2.m3</jfx.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>de.maggu2810.thirdparty.efxclipse</groupId>
+      <artifactId>org.eclipse.fx.osgi</artifactId>
+      <version>3.6.0.201907240103</version>
+      <classifier>no-fragment-host-version-constraint</classifier>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>de.maggu2810.osgi.openjfx</groupId>
+      <artifactId>openjfx.base</artifactId>
+      <version>${jfx.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.maggu2810.osgi.openjfx</groupId>
+      <artifactId>openjfx.controls</artifactId>
+      <version>${jfx.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.maggu2810.osgi.openjfx</groupId>
+      <artifactId>openjfx.graphics.linux_64</artifactId>
+      <version>${jfx.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.maggu2810.osgi.openjfx</groupId>
+      <artifactId>openjfx.graphics.mac</artifactId>
+      <version>${jfx.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.maggu2810.osgi.openjfx</groupId>
+      <artifactId>openjfx.graphics.win32_64</artifactId>
+      <version>${jfx.version}</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+
+</project>

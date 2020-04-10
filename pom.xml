@@ -25,7 +25,9 @@
 
   <modules>
     <module>compile</module>
+    <module>compile-jfx-11</module>
     <module>runtime</module>
+    <module>runtime-jfx-11</module>
     <module>test-compile</module>
     <module>test-runtime</module>
   </modules>
