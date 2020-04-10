@@ -15,3 +15,8 @@ bundles/*/bin_test/
 bundles/ash-ui-configinterface/typings/
 
 **/.*.md.html
+
+# Eclipse IDE
+.project
+.settings/
+.classpath
