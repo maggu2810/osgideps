@@ -54,6 +54,24 @@
       <version>${jfx.version}</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>de.maggu2810.osgi.openjfx</groupId>
+      <artifactId>openjfx.media.linux_64</artifactId>
+      <version>${jfx.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.maggu2810.osgi.openjfx</groupId>
+      <artifactId>openjfx.media.mac</artifactId>
+      <version>${jfx.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.maggu2810.osgi.openjfx</groupId>
+      <artifactId>openjfx.media.win32_64</artifactId>
+      <version>${jfx.version}</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 
 </project>
