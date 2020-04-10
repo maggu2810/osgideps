@@ -4,7 +4,7 @@
 
   <groupId>de.maggu2810.osgideps</groupId>
   <artifactId>de.maggu2810.osgideps</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3</version>
   <packaging>pom</packaging>
 
   <name>OSGi Dependencies</name>
@@ -35,7 +35,7 @@
   <scm>
     <connection>scm:git:git@github.com:maggu2810/osgideps.git</connection>
     <developerConnection>scm:git:git@github.com:maggu2810/osgideps.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>de.maggu2810.osgideps-0.0.3</tag>
     <url>https://github.com/maggu2810/osgideps</url>
   </scm>
 
