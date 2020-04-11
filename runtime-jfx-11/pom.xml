@@ -19,7 +19,7 @@
     <dependency>
       <groupId>de.maggu2810.osgi.fxloader</groupId>
       <artifactId>fxloader-osgi-eclipse</artifactId>
-      <version>0.0.1</version>
+      <version>0.0.2</version>
       <scope>compile</scope>
     </dependency>
 
