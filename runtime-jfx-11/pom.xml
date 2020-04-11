@@ -17,10 +17,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>de.maggu2810.thirdparty.efxclipse</groupId>
-      <artifactId>org.eclipse.fx.osgi</artifactId>
-      <version>3.6.0.201907240103</version>
-      <classifier>no-fragment-host-version-constraint</classifier>
+      <groupId>de.maggu2810.osgi.fxloader</groupId>
+      <artifactId>fxloader-osgi-eclipse</artifactId>
+      <version>0.0.1</version>
       <scope>compile</scope>
     </dependency>
 
